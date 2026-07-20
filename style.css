@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f0; /* PC時の背景 */
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* セクション */
+.header,
+.main,
+.footer {
+  padding: 16px;
+}
+
+/* PC用スタイル */
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+    margin: 0 auto; /* 中央寄せ */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* 左右シャドウ */
+  }
+}
