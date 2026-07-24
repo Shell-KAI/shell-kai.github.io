@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web・LINE・デザイン制作を通して、わかりにくい情報をお客様に伝わる形へ整理するプロフィールサイトです。">
+  <title>整理して、伝わるカタチへ | Web・LINE・デザイン制作サポート</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="#" aria-label="トップページへ">
+        <span class="site-logo__main">整理して、伝わるカタチへ</span>
+        <span class="site-logo__sub">Web・LINE・デザイン制作サポート</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="global-nav" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="sr-only">メニューを開閉する</span>
+      </button>
+
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul class="global-nav__list">
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#strength">私の強み</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#works">制作実績・事例</a></li>
+          <li><a href="#flow">ご依頼の流れ</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small global-nav__contact" href="#contact">
+          <span class="btn__icon" aria-hidden="true">✉</span>
+          ご相談・お問い合わせ
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__lead">わかりにくい指示や情報を</p>
+          <h1 class="hero__title">お客様に伝わるカタチに<br>整理し、仕組みを整えます</h1>
+          <ul class="check-list hero__points">
+            <li>話が早い・理解が早いとご評価いただいています</li>
+            <li>小規模事業・個人事業の「困った」をまるごとサポート</li>
+            <li>10年継続のクライアントも多数</li>
+          </ul>
+          <p class="hero__message">作って終わりではなく、<br>その先の運用まで一緒に考えます。</p>
+        </div>
+
+        <figure class="hero__visual">
+          <img src="img/main-visual.jpg" alt="ノートとパソコンが置かれた作業デスク">
+          <figcaption class="hero__note">
+            <span>こんなお悩み、ありませんか？</span>
+            <ul class="check-list">
+              <li>伝えたいことがうまくまとまらない</li>
+              <li>お客様からの同じ質問が多い</li>
+              <li>情報がバラバラでわかりにくい</li>
+              <li>発信や更新まで手が回らない</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section strength" id="strength">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__mark">私の強み</p>
+          <h2 class="section-heading__title">ただの制作ではなく、「整理して、伝わる形にする」ことが得意です。</h2>
+        </header>
+
+        <ul class="card-list card-list--five">
+          <li class="feature-card">
+            <span class="icon icon-chat" aria-hidden="true"></span>
+            <h3>理解が早く、話が早い</h3>
+            <p>ご要望の意図を素早く汲み取り、やり取りのストレスを減らします。</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon icon-document" aria-hidden="true"></span>
+            <h3>情報を整理し、翻訳する力</h3>
+            <p>専門用語や複雑な内容を、お客様目線でわかりやすくまとめます。</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon icon-device" aria-hidden="true"></span>
+            <h3>デザイン・文章・導線を一貫対応</h3>
+            <p>見た目だけでなく、全体の統一感と使いやすさを整えます。</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon icon-calendar" aria-hidden="true"></span>
+            <h3>実務目線で、運用まで考える</h3>
+            <p>作って終わりではなく、現場で続けやすい仕組みづくりを重視します。</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon icon-handshake" aria-hidden="true"></span>
+            <h3>長く付き合える安心感</h3>
+            <p>10年継続のクライアントも多く、信頼関係を大切にしています。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section service" id="service">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__mark">サービス内容</p>
+          <h2 class="section-heading__title">お客様の「困った」を解決するために、必要なことをまとめてサポートします。</h2>
+        </header>
+
+        <ul class="service-list">
+          <li class="service-card">
+            <img class="service-card__image" src="img/service-line.jpg" alt="スマートフォンでLINEを確認している手元">
+            <div class="service-card__body">
+              <p class="service-card__label">LINE設定サポート</p>
+              <h3>LINEを使いやすく整え、問い合わせ・予約をスムーズに</h3>
+              <ul class="dot-list">
+                <li>リッチメニュー制作・設定</li>
+                <li>応答メッセージ設計</li>
+                <li>導線設計・改善提案</li>
+              </ul>
+            </div>
+          </li>
+          <li class="service-card">
+            <img class="service-card__image" src="img/service-paper.jpg" alt="紙の資料と花が置かれたデスク">
+            <div class="service-card__body">
+              <p class="service-card__label">紙ものデザイン制作</p>
+              <h3>チラシ・冊子・名刺など、伝わる紙媒体をデザイン</h3>
+              <ul class="dot-list">
+                <li>チラシ・フライヤー・情報ペーパー</li>
+                <li>冊子・パンフレット</li>
+                <li>名刺・ショップカードなど</li>
+              </ul>
+            </div>
+          </li>
+          <li class="service-card">
+            <img class="service-card__image" src="img/service-web.jpg" alt="ノートパソコンでWebサイトを編集している手元">
+            <div class="service-card__body">
+              <p class="service-card__label">Web制作・更新サポート</p>
+              <h3>ホームページを育てるお手伝い</h3>
+              <ul class="dot-list">
+                <li>HP更新・修正・バナー制作</li>
+                <li>LP制作</li>
+                <li>WordPress更新・簡単な改修</li>
+              </ul>
+            </div>
+          </li>
+          <li class="service-card">
+            <img class="service-card__image" src="img/service-writing.jpg" alt="ノートとペンが置かれたデスク">
+            <div class="service-card__body">
+              <p class="service-card__label">リライト・文章サポート</p>
+              <h3>伝わりにくい文章を、読みやすく・わかりやすく</h3>
+              <ul class="dot-list">
+                <li>既存文章のリライト</li>
+                <li>ページ構成の見直し</li>
+                <li>情報整理・文章作成サポート</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <p class="service__note">上記以外のことも、まずはお気軽にご相談ください。</p>
+      </div>
+    </section>
+
+    <section class="section results" id="works">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__mark">ご依頼いただくと、こんな変化が生まれます</p>
+        </header>
+
+        <ul class="card-list card-list--four">
+          <li class="feature-card feature-card--compact">
+            <span class="icon icon-chat" aria-hidden="true"></span>
+            <h3>問い合わせ・予約が増えた</h3>
+            <p>LINE導線の見直しで、お客様が迷わず行動できるように。</p>
+          </li>
+          <li class="feature-card feature-card--compact">
+            <span class="icon icon-clock" aria-hidden="true"></span>
+            <h3>時間と手間が大幅に減った</h3>
+            <p>よくある質問や案内を整理し、業務効率を改善。</p>
+          </li>
+          <li class="feature-card feature-card--compact">
+            <span class="icon icon-chart" aria-hidden="true"></span>
+            <h3>お店・サービスの印象がアップ</h3>
+            <p>デザイン統一で、信頼感とプロフェッショナルな印象に。</p>
+          </li>
+          <li class="feature-card feature-card--compact">
+            <span class="icon icon-heart" aria-hidden="true"></span>
+            <h3>「相談してよかった」の声が増えた</h3>
+            <p>わかりやすく伝わることで、お客様満足度が向上。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section profile-area" id="profile">
+      <div class="container profile-area__grid">
+        <article class="profile-card">
+          <img class="profile-card__image" src="img/profile.jpg" alt="制作者のプロフィール写真">
+          <div class="profile-card__body">
+            <h2>私について</h2>
+            <p>はじめまして。Web・LINE・デザイン制作を行っている　貝塚　です。</p>
+            <p>これまで小規模事業・個人事業のお客様を中心に、10年以上お手伝いをしてきました。</p>
+            <p>「気軽に相談できる」「話が早くて助かる」と言っていただけることが、何よりのやりがいです。</p>
+          </div>
+        </article>
+
+        <article class="support-card">
+          <h2>単価を上げたい方へ</h2>
+          <p>こんなお悩みはありませんか？</p>
+          <ul class="check-list">
+            <li>いつも急ぎ対応になってしまう</li>
+            <li>あれもこれも頼まれて収拾がつかない</li>
+            <li>適正な価格をお願いしたいけど言いづらい</li>
+          </ul>
+          <p class="support-card__message">業務の整理・役割の明確化・仕組み化で、お互いにとって心地よい関係をつくります。</p>
+        </article>
+
+        <article class="contact-card" id="contact">
+          <h2>ご相談・お見積りはお気軽に</h2>
+          <p>「何を相談していいかわからない」段階でも大丈夫です。まずはお話をお聞かせください。</p>
+          <ul class="contact-card__features">
+            <li>ご相談無料</li>
+            <li>オンライン対応</li>
+            <li>単発・継続どちらもOK</li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:kaizuka.work&#64;gmail.com">
+            <span class="btn__icon" aria-hidden="true">✉</span>
+            ご相談・お問い合わせはこちら
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <ul class="footer-policy">
+        <li>お客様目線で考え、わかりやすく伝えます</li>
+        <li>無理なく続けられる、現実的な提案をします</li>
+        <li>一緒に成長できる、長いお付き合いを目指します</li>
+      </ul>
+      <p class="site-footer__copy">&copy; 2026 整理して、伝わるカタチへ</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
