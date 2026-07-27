@@ -375,6 +375,42 @@ body {
   border-radius: 50%;
 }
 
+.flow-list {
+  display: grid;
+  gap: 18px;
+  margin: 18px 0;
+  counter-reset: flow;
+}
+
+.flow-list li {
+  position: relative;
+  padding-left: 42px;
+  line-height: 1.7;
+  counter-increment: flow;
+}
+
+.flow-list li::before {
+  content: counter(flow);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-list strong {
+  color: var(--main-dark);
+  font-size: 16px;
+}
+
 /* Cards */
 .card-list {
   display: grid;
