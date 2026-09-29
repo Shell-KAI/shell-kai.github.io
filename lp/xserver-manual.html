@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>自分のお店のホームページ、自分で作ってみませんか？</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFE8DA;
+    --bg-panel:#F8F4EA;
+    --ink:#3B2A20;
+    --ink-soft:#6B5A4B;
+    --plum:#6B2737;
+    --gold:#B8863F;
+    --line:#D8CBB4;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#211A15; --bg-panel:#2A2119; --ink:#F1E8DA; --ink-soft:#C9BBA8;
+      --line:#463A2E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#211A15; --bg-panel:#2A2119; --ink:#F1E8DA; --ink-soft:#C9BBA8;
+    --line:#463A2E;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans JP",sans-serif;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Shippori Mincho",serif;font-weight:700;line-height:1.5;margin:0 0 .6em;}
+  .wrap{max-width:720px;margin:0 auto;padding:3rem 1.5rem 5rem;}
+  header.hero{padding:3.5rem 1.5rem 2.5rem;text-align:left;border-bottom:1px solid var(--line);}
+  header.hero .wrap{padding:0;}
+  .eyebrow{color:var(--plum);font-weight:500;font-size:.95rem;margin-bottom:.8rem;}
+  h1{font-size:clamp(1.6rem,4.5vw,2.3rem);max-width:16ch;}
+  .lede{color:var(--ink-soft);font-size:1.05rem;max-width:42ch;margin-top:1rem;}
+  section{margin:3.2rem 0;}
+  h2{font-size:1.35rem;border-left:4px solid var(--plum);padding-left:.7rem;}
+  .plans{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;}
+  .plan{border:1px solid var(--line);background:var(--bg-panel);border-radius:4px;padding:1.2rem 1.4rem;}
+  .plan h3{font-size:1.05rem;margin-bottom:.3rem;display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;}
+  .plan p{margin:0;color:var(--ink-soft);font-size:.95rem;}
+  .tag{font-family:"Noto Sans JP",sans-serif;font-size:.75rem;font-weight:700;color:#fff;background:var(--plum);padding:.15rem .6rem;border-radius:2px;}
+  .plan.recommend{border-color:var(--plum);border-width:2px;}
+  ol.steps{list-style:none;margin:1.5rem 0 0;padding:0;counter-reset:step;}
+  ol.steps li{
+    counter-increment:step;position:relative;padding:0 0 1.6rem 3rem;
+    border-left:1px solid var(--line);margin-left:.9rem;
+  }
+  ol.steps li:last-child{border-left-color:transparent;padding-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);position:absolute;left:-1.1rem;top:0;
+    width:2.2rem;height:2.2rem;border-radius:50%;background:var(--plum);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem;
+  }
+  ol.steps h3{font-size:1.05rem;margin-bottom:.35rem;}
+  ol.steps p{margin:0;color:var(--ink-soft);}
+  .note{font-size:.88rem;color:var(--ink-soft);border-top:1px dashed var(--line);margin-top:2.4rem;padding-top:1rem;}
+  .cta{
+    margin-top:1.6rem;padding:1.5rem;background:var(--plum);color:#fff;border-radius:4px;
+  }
+  .cta a{color:#fff;font-weight:700;text-decoration-thickness:2px;}
+  .cta p{margin:0 0 .8rem;}
+  .support{
+    margin-top:3.5rem;padding:1.6rem;border:1px solid var(--line);border-radius:4px;background:var(--bg-panel);
+  }
+  .support h2{border:none;padding:0;}
+  footer{max-width:720px;margin:0 auto;padding:0 1.5rem 3rem;color:var(--ink-soft);font-size:.85rem;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">お店のホームページ、自分で作る</div>
+    <h1>自分のお店のホームページ、自分で作ってみませんか？</h1>
+    <p class="lede">ケーキ屋さん・パン屋さんのような小さなお店でも、営業時間やメニューをちゃんと伝えられるサイトは持てます。ここでは、サーバー選びから実際の申し込み・設定までを順番に紹介します。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>まず、サーバーを3つのタイプで比べてみます</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>ロリポップ！</h3>
+        <p>とにかく費用を抑えたい方向け。設定は自分でしっかり調べながら進める前提になります。</p>
+      </div>
+      <div class="plan recommend">
+        <h3>Xserver <span class="tag">おすすめ</span></h3>
+        <p>安定した運用実績と、初期設定・移管のサポート体制が魅力。費用と安心感のバランスがよく、自分で設定するお店にちょうどいいタイプです。</p>
+      </div>
+      <div class="plan">
+        <h3>XServerビジネス</h3>
+        <p>稼働率保証（SLA）やセキュリティ強化まで求める方向け。決済情報を扱うECサイトなど、より慎重な運用が必要な場合に。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>お店のサイトなら、Xserverがちょうどいい理由</h2>
+    <p>特別な知識がなくても、ドメイン取得・サーバー契約・WordPressのインストールを一つの申し込み画面でまとめて済ませられます。困ったときのサポート窓口があるのも、はじめて自分でサイトを作る方には心強いポイントです。</p>
+  </section>
+
+  <section>
+    <h2>申し込みから公開までの流れ</h2>
+    <ol class="steps">
+      <li>
+        <h3>お店の独自ドメインを決める</h3>
+        <p>お店の名前やローマ字表記など、お客さんが覚えやすいものを考えておきます。</p>
+      </li>
+      <li>
+        <h3>Xserverの申し込みページを開く</h3>
+        <p>「WordPressクイックスタート」を選ぶと、ドメイン取得・サーバー契約・WordPressの導入が一度の申し込みで完了します。</p>
+        <p>【ここにXserver申し込みページへのリンクを設置】</p>
+      </li>
+      <li>
+        <h3>プランと契約期間を選ぶ</h3>
+        <p>個人店のサイトであれば、標準的なプランで十分です。契約期間は、長いほど月あたりの費用が下がります。</p>
+      </li>
+      <li>
+        <h3>お支払い情報を入力して契約を完了する</h3>
+        <p>ここまでで、ドメインとサーバー、WordPressの土台が整います。</p>
+      </li>
+      <li>
+        <h3>WordPressの管理画面にログインする</h3>
+        <p>案内されたURLとID・パスワードで管理画面に入り、テーマ（見た目）を選ぶところから始めます。</p>
+      </li>
+      <li>
+        <h3>営業時間・メニューのページを作る</h3>
+        <p>まずはこの2つのページだけで十分です。あとから少しずつ増やしていけます。</p>
+      </li>
+    </ol>
+    <p class="note">※料金やお申し込み画面の表示は変更されることがあります。お申し込み前に、必ずXserverの公式サイトで最新の内容をご確認ください。</p>
+  </section>
+
+  <div class="cta">
+    <p>本ページにはアフィリエイトリンクが含まれています。</p>
+    <p><a href="#">Xserverの公式サイトで詳細を見る（ここにリンクを設置）</a></p>
+  </div>
+
+  <div class="support">
+    <h2>ここまでやってみて、詰まったら</h2>
+    <p>ドメインの設定やWordPressの初期設定は、途中でつまずきやすいところでもあります。自分で進めるのが不安な方向けに、設定のお手伝いや、サイトそのものの制作代行も行っています。</p>
+    <p>【ここにサービス詳細LPへのリンクを設置】</p>
+  </div>
+
+</div>
+
+<footer>Shell_KAI</footer>
+
+</body>
+</html>
